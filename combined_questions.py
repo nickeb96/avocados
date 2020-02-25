@@ -4,7 +4,7 @@ import pandas as pd
 
 df = pd.read_csv("avocado.csv")
 
-
+# Start Code Sean
 # Question 1: Which region has the highest average avocado price?
 # Answer 1: The region with the highest average avocado price is HartfordSpringfield
 
@@ -69,7 +69,9 @@ AveragePriceByYear = AveragePriceByYear.mean().sort_values(['AveragePrice'], asc
 answer5 = AveragePriceByYear['AveragePrice']
 print(answer5)
 # end code for question 5
+# end code Sean
 
+# start code Nicholas
 # begin code question 6
 months = {x: 0 for x in range(1, 13)}
 for date in df["Date"]:
@@ -123,3 +125,4 @@ print("Organic avocodos make up {:.2%} and conventional avocodos make up {:.2%}.
         .format(total_organic / (total_organic + total_conventional),
                 total_conventional / (total_organic + total_conventional)))
 # end code question 10
+# end code Nicholas
